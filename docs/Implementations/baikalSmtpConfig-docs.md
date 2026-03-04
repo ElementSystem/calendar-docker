@@ -9,6 +9,7 @@
 
 - Feature 1: Replaced placeholder SMTP values in the generic compose example with concrete server and account values, while keeping password via env interpolation.
 - Feature 2: Added implementation documentation for maintainability and future updates.
+- Feature 3: Adjusted container port declaration to avoid host port 80 conflicts in reverse-proxy deployments (for example Coolify).
 
 ## Key Files & Structure
 
@@ -41,3 +42,4 @@
 
 - Phase 1: Updated `examples/docker-compose.email.yaml` placeholders to concrete SMTP settings with secret-safe password interpolation.
 - Phase 2: Added implementation documentation under `docs/Implementations`.
+- Phase 3: Switched from `80:80` to `80` in the SMTP compose example to remove external host port 80 binding.

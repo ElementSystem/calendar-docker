@@ -19,7 +19,7 @@ services:
         user           testcalendar@elementsystem.com
         password       ${SMTP_PASSWORD}
     ports:
-      - "80:80"
+      - "80"
     volumes:
       - config:/var/www/baikal/config
       - data:/var/www/baikal/Specific
