@@ -13,11 +13,11 @@ services:
         tls            on
         tls_trust_file /etc/ssl/certs/ca-certificates.crt
         account        default
-        host           <smtp host>
+        host           mail.elementsystem.com
         port           587
-        from           baikal@example.com
-        user           <user>
-        password       <password>
+        from           testcalendar@elementsystem.com
+        user           testcalendar@elementsystem.com
+        password       ${SMTP_PASSWORD}
     ports:
       - "80:80"
     volumes:
